@@ -63,7 +63,7 @@ open class PieSliceLayer: CALayer, CAAnimationDelegate {
     
     public var selected: Bool = false {
         didSet {
-            animateSelected(selected: selected)
+            // animateSelected(selected: selected)
             if let sliceData = sliceData {
                 sliceDelegate?.onSelected(slice: PieSlice(data: sliceData, view: self), selected: selected)
             } else {
